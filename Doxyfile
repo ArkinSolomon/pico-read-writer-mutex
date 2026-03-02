@@ -1,0 +1,27 @@
+PROJECT_NAME           = "Pico Read Writer Mutex"
+PROJECT_BRIEF          = "A mutex for the Raspberry Pi Pico SDK that allows concurrent reads and exclusive writes to a shared resource."
+OUTPUT_DIRECTORY       = docs
+
+INPUT                  = README.md src include
+RECURSIVE              = YES
+FILE_PATTERNS          =  *.h
+USE_MDFILE_AS_MAINPAGE = ./README.md
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = .
+HTML_FILE_EXTENSION    = .html
+GENERATE_TREEVIEW      = YES
+
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_DOCBOOK       = NO
+GENERATE_PERLMOD       = NO
+
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = YES
