@@ -38,6 +38,7 @@ int main()
   rw_mutex_enter_read_blocking(&mtx);
   printf("%u", my_shared_var); // 30
   rw_mutex_exit_read(&mtx);
+  return 0;
 } 
 
 void core1()
