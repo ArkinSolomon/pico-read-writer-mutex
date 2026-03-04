@@ -19,8 +19,6 @@ void core1();
 int main()
 {
   read_writer_mutex_init(&mtx);
-  
-  queue_init(&q, 1, 1);
 
   multicore_reset_core1();
   multicore_launch_core1(core1);
